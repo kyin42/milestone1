@@ -193,7 +193,7 @@ footer .bottom-row{
 	padding-left: 0;
 	width: 100%;
 }
-.contact-form .input::placeholder{
+.contact-form .input:placeholder{
 	color: #B1AEDE;
 }
 .contact-form .input.i1{
@@ -220,7 +220,33 @@ footer .bottom-row{
 	border: none;
 	display: block;
 }
-.contact-form .button::hover{
+.contact-form .button:hover{
 	box-shadow: 0 0 30px rgba(64, 61, 101, 0.75);
 	color: #403D65;
+}
+
+
+@keyframes example {
+    0%   {width: 100%; background-color: red; left:0px; top:0px;}
+    25%  {background-color: yellow; left:200px; top:0px;}
+    50%  {width: 80%; background-color: blue; left:200px; top:200px;}
+    75%  {background-color: green; left:0px; top:200px;}
+    100% {width: 100%; background-color: red; left:0px; top:0px;}
+}
+@keyframes test {
+    0%   {left:-5px; top:-5px;}
+    25%  {left:5px; top:-5px;}
+    50%  {left:-5px; top:5px;}
+    75%  {left:5px; top:5px;}
+    100% {left:-5px; top:-5px;}
+}
+
+/* The element to apply the animation to */
+@media screen and (min-width: 992px){
+	.main-left img {
+	    animation-name: test;
+	    animation-duration: 4s;
+	    animation-iteration-count: infinite;
+	    position: absolute;
+	}
 }
