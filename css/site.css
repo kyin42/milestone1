@@ -181,16 +181,17 @@ footer .bottom-row{
 	margin: 0 auto;
 }
 .contact-form .input{
-	outline: none;
+	border: none;
 	border-bottom: 2px solid white;
 	height: 35px;
-	margin-top: 15px;
+	margin-top: 30px;
 	background: none;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 700;
 	font-size: 18px;
-	color: whit;
+	color: white;
 	padding-left: 0;
+	width: 100%;
 }
 .contact-form .input::placeholder{
 	color: #B1AEDE;
@@ -215,6 +216,9 @@ footer .bottom-row{
 	font-size: 18px;
 	color: white;
 	text-transform: uppercase;
+	margin: 50px auto 0;
+	border: none;
+	display: block;
 }
 .contact-form .button::hover{
 	box-shadow: 0 0 30px rgba(64, 61, 101, 0.75);
