@@ -35,11 +35,11 @@
                 </div>
             </div>
             <div>
-                <form class="contact-form">
+                <form name="contact-form" class="contact-form" onsubmit="return validateForm()">
                     <input type="text" class="input i1" name="firstname" placeholder="First Name">
                     <input type="text" class="input i2" name="lastname" placeholder="Last Name">
-                    <input type="text" class="input" name="email" placeholder="Email Address">
-                    <input type="text" class="input" name="emailcheck" placeholder="Confirm Email Address">
+                    <input type="email" class="input" name="email" placeholder="Email Address">
+                    <input type="email" class="input" name="emailcheck" placeholder="Confirm Email Address">
                     <input type="submit" class="button" value="Bring on the afterlife">
                 </form>
             </div>
@@ -68,6 +68,45 @@
             </div>
         </footer>
     <!-- /container -->
+    
+    <script type="text/javascript">
+        function validateForm() {
+            //first name
+            var fn = document.forms["contact-form"]["firstname"];
+            if (fn.value == null || fn.value == "") {
+                alert("You must fill in a first name");
+                return false;
+            }
+            
+            
+            //last name
+            var ln = document.forms["contact-form"]["lastname"];
+            if (ln.value == null || ln.value == "") {
+                alert("You must fill in a last name");
+                return false;
+            }
+            
+            //email
+            var email = document.forms["contact-form"]["email"];
+            var email2 = document.forms["contact-form"]["emailcheck"];
+            if (email.value == null || email.value == "") {
+                alert("You must fill in the email address field");
+                return false;
+            }
+            if (email2.value == null || email2.value == "") {
+                alert("You must fill in the confirm email address field");
+                return false;
+            }
+            if(!email.validity.valid){
+                alert("You must enter in a valid email address");
+                return false;
+            }
+            if(email.value != email2.value){
+                alert("The email fields must match");
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>
