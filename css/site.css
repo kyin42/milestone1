@@ -154,7 +154,7 @@ footer .bottom-row{
 	font-size: 24px;
 	margin-bottom: 35px;
 }
-.about-section.leftimg .title .name{
+.about-section .title .name{
 	color: #5C5C5C;
 }
 
@@ -170,4 +170,53 @@ footer .bottom-row{
 }
 .about-section.rightimg .body{
 	text-align: right;
+}
+
+.about-section .title .name,.about-section .title .job-title{
+	display: inline;
+}
+
+.contact-form{
+	width: 500px;
+	margin: 0 auto;
+}
+.contact-form .input{
+	outline: none;
+	border-bottom: 2px solid white;
+	height: 35px;
+	margin-top: 15px;
+	background: none;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: whit;
+	padding-left: 0;
+}
+.contact-form .input::placeholder{
+	color: #B1AEDE;
+}
+.contact-form .input.i1{
+	width: 45%;
+	float: left;
+}
+.contact-form .input.i2{
+	width: 45%;
+	float: right;
+}
+
+.contact-form .button{
+	height: 60px;
+	padding: 20px 45px;
+	border-radius: 30px;
+	box-shadow: 0 0 30px rgba(255,142,216,0.75);
+	background-color: #FF8ED8;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	color: white;
+	text-transform: uppercase;
+}
+.contact-form .button::hover{
+	box-shadow: 0 0 30px rgba(64, 61, 101, 0.75);
+	color: #403D65;
 }
