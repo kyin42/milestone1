@@ -26,11 +26,12 @@ body {
 	background-color: #53507E;
 }
 
-.header .nav .active{
+.header .nav .active a{
 	color: white;
 	border-bottom: 2px solid #FF8ED8;
+	background-color: #53507E;
 }
-
+	
 .main-left img{
 	width: 100%;
 }
@@ -110,4 +111,63 @@ footer .bottom-row{
 
 .nav li a{
 	text-transform: uppercase;
+}
+
+.about-section {
+	width: 750px;
+	padding: 80px;
+	margin: 0 auto 90px;
+	background-color: white;
+	box-shadow: 0 0 100px rgba(255,255,255,.75);
+}
+.about-section .title{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 24px;
+	color: #FF8ED8;
+	margin-bottom: 35px;
+}
+.about-section .body{
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #5C4C4C;
+	max-width: 480px;
+}
+
+.about-section.leftimg{
+	padding: 80px 80px 80px 180px;
+	position: relative;
+}
+.about-section img{
+	width: 208px;
+	position: absolute;
+	top: -40px;
+	border: 20px solid white;
+	border-radius: 50%;
+}
+
+.about-section.leftimg img{
+	left: -70px;
+}
+.about-section.leftimg .title{
+	font-size: 24px;
+	margin-bottom: 35px;
+}
+.about-section.leftimg .title .name{
+	color: #5C5C5C;
+}
+
+.about-section.rightimg{
+	padding: 80px 180px 80px 80px;
+	position: relative;
+}
+.about-section.rightimg img{
+	right: -70px;
+}
+.about-section.rightimg .title{
+	text-align: right;
+}
+.about-section.rightimg .body{
+	text-align: right;
 }
