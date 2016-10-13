@@ -3,102 +3,114 @@ body {
 }
 .header {
 	height: 37px;
-	width: 1100px;
 	margin-top: 30px;
 	text-align: center;
 	margin-bottom: 115px;
 }
 .header .logo{
 	height: 37px;
+	margin-top: 12px;
+	
 }
-.header nav {
-	float: right;
+.header .nav {
 	font-family: 'Raleway',sans-seif;
 	font-weight: 800;
 	font-size: 12px;
+	color: #B1AEDE;
+	margin-left: 35px;
 	margin-top: 12px;
 }
 
-nav:hover{
+.header .nav li :hover{
+	color: white;
+	background-color: #53507E;
+}
+
+.header .nav .active{
+	color: white;
+	border-bottom: 2px solid #FF8ED8;
+}
+
+.main-left{
+	width: 550px;
+	float: left;
+}
+.main-left img{
+	width: 100%;
+}
+
+.main-right{
+	width: 550px;
+	float: left;
+}
+
+.main-right .headline{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 52px;
+	color: white;
+	line-height: 56px;
+	margin-bottom: 35px;
+}
+
+.main-right .subtext{
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #B1AEDE;
+	margin-bottom: 120px;
+}
+
+.main-right .btn{
+	height: 80px;
+	padding: 30px 45px;
+	border-radius: 40px;
+	box-shadow: 0 0 30px rgba(255,142,216,.75);
+	background-color: #FF8ED8;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 25px;
 	color: white;
 }
 
-nav.active{
-	color: white;
-	border-bottom: 2px;
-	border-style: line;
-	color: #FF8ED8;
+.main-right .btn:hover{
+	box-shadow: 0 0 30px rgba(64,61,101,0.75);
+	color: #403D65;
 }
-/*
-Nav.active
-	font color white
-	border bottom 2px height
-	solid line
-	color #FF8ED8 //pink
-Left Area
-	width 550px
-	float left
-	Image
-Right Area
-	width 550px
-	float left
-	Headline
-		font family ‘Raleway’, sans-serif
-		font weight 800
-		font size 52px
-		font color white
-		line height 56px
-		margin below 35px
-	Subtext
-		font family ‘Roboto Slab’, serif
-		font weight 400
-		font size 20px
-		font color #B1AEDE //light purple
-		margin below 120px
-	Button
-		height 80px
-		padding top/bottom 30px
-		padding right/left 45px
-		corner radius 40px
-		box shadow 0 0 30px rgba(255, 142, 216, 0.75)
-		background color #FF8ED8 //pink
-		font family ‘Raleway’, sans-serif
-		font weight 800
-		font size 24px
-		font color white
-	Button:hover
-		box shadow 0 0 30px rgba(64, 61, 101, 0.75)
-		font color #403D65 //dark purple
-Footer
-margin above 100px
-height 105px
-background color #403D65 //dark purple
-Top Row
-width 1100px
-height 34px
-padding top/bottom 10px
-padding right/left 0
-Nav
-font family ‘Raleway’, sans-serif
-font weight 800
-font size 12px
-font color #B1AEDE //light purple
-margin right 35px
-margin top 10px
-Nav:hover
-font color white
-Social
-width 34px
-margin left 10px
-Social:hover
-transparency 0.75
-Bottom Row
-height 35px
-margin above 15px
-font family ‘Roboto Slab’, serif
-font weight 600
-font size 12px
-font color #B1AEDE //light purple
-text align center
 
-*/
+footer{
+	margin-top: 100px;
+	height: 105px;
+	background-color: #403D65;
+}
+
+footer .top-row{
+	width: 1100px;
+	height: 34px;
+	padding: 10px 0;
+}
+footer .top-row .nav{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	color: #B1AEDE;
+	margin-right: 35px;
+	margin-top: 10px;
+}
+
+footer .top-row .nav :hover{
+	color: white;
+}
+footer .top-row .social{
+	width: 34px;
+	margin-left: 10px;
+}
+
+footer .bottom-row{
+	height: 35px;
+	margin-top: 15px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 600;
+	font-size: 12px;
+	color: #B1AEDE;
+}
